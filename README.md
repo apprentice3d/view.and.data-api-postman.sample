@@ -1,55 +1,43 @@
-# Autodesk View & Data API Postman Collection
+## Autodesk View & Data API Postman Collection
 
 [![LMV REST](https://img.shields.io/badge/View%20%26%20Data%20API-v1-green.svg)](http://developer-autodesk.github.io/)
 ![Platforms](https://img.shields.io/badge/platform-windows%20%7C%20osx%20%7C%20linux-lightgray.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
 
+**Note:** For using this sample, you need a valid oAuth credential for the translation / extraction portion. Visit [this page](https://developer.autodesk.com/api/view-and-data-api/#step-by-step-guide) for instructions to get on-board and follow just Step 1 of that *Step-by-Step Guide*.
 
-An AutodeskView & Data API postman collection, environment with JetPacks support.
 
-Demonstrates the Autodesk View & Data API authorisation and translation process using a Postman Collection.
+## Motivation
+
+To facilitate understanding the View & Data API and help developers to debug their process quickly, this repository is presenting the setup for Chrome Postman tool, which executes the REST calls provided in the [quick start documentation](http://developer.api.autodesk.com/documentation/v1/vs_quick_start.html).
+
+## Description
+
+An AutodeskView & Data API postman collection, environment with JetPacks support, demonstrating the Autodesk View & Data API authorization and translation process using a Postman Collection.
 
 If you know Postman already, here are the 2 components you need:
   * [Autodesk View & Data API Postman Environment](https://raw.githubusercontent.com/Developer-Autodesk/view.and.data.api.postman/master/Autodesk%20View%20%26%20Data%20API%20Production%20Server.postman_environment)
   * [Autodesk View & Data API Postman Collection](https://www.getpostman.com/collections/14e42c06b5f44aa2f88f)
 
+This repository exercises the Postman tool to demonstrate the Autodesk View and Data API
+authorization and translation process mentioned in the [Step-by-Step Guide](https://developer.autodesk.com/api/view-and-data-api/#step-by-step-guide).
 
-## Description
+In order to make use of this sample, you need to register your consumer key by going to ***[https://developer.autodesk.com > My Apps](https://developer.autodesk.com/myapps)***, thus getting the credentials necessary for HTTP command arguments.
 
-The view.and.data.api.postman collection exercises the Postman tool to demonstrate the Autodesk View and Data API
-authorisation and translation process mentioned in the Quick Start guide.
-
-It closely follows the steps described in the documentation:
-* http://developer.api.autodesk.com/documentation/v1/vs_quick_start.html
-
-In order to make use of this sample, you need to register your consumer key, of course:
-* https://developer.autodesk.com > My Apps
-
-This provides the credentials to supply to the HTTP command arguments.
-
-
-## Motivation
-
-What do you think about setting up the Chrome Postman tool that does nothing but executes the REST calls provided in 
-the quick start documentation?
-
-That would presumably help developers debugging their processes quickly.
 
 
 ## Postman and setup
 
 ### Installation
 
-Postman is a Google Chrome App that allows you to quickly use and test API calls with our system, with features that 
-help to streamline and optimized your calls, as well as inspecting server responses.
+Postman is a Google Chrome App that allows you to quickly use and test API calls with our system, with features that help to streamline and optimized your calls, as well as inspecting server responses.
 
-To download Postman, simply follow [this link](https://chrome.google.com/webstore/detail/postman-rest-client-packa/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
-and click on “Add to Chrome”.
+To download Postman, simply follow [this link](https://chrome.google.com/webstore/detail/postman-rest-client-packa/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) and click on “Add to Chrome”.
 
 To launch Postman, open your chrome apps by clicking on the button to the left of the browser.
 ![](images/launch-postman.png)
 
-If the button isn’t there, you can use the ‘cmd-shift-B’ shortcut on OSX, and the ‘ctrl-shift-B’ shortcut on Windows.
+If the button isn’t there, you can use the ***‘cmd-shift-B’*** shortcut on OSX, and the ***‘ctrl-shift-B’*** shortcut on Windows.
 
 Then, click on the Postman icon to launch the app.<br />
 ![](images/postman-logo.png)
@@ -57,43 +45,50 @@ Then, click on the Postman icon to launch the app.<br />
 Postman will then open in a new window, ready to set up an environment.
 
 
-### Environment
+## Environment setup
 
 Setting up an environment allows us to easily use environmental variables, which will make calling to the API easier, and quicker.
 To do so, we click the downward arrow next to ‘No environment and select ‘Manage environments'
-![](images/manage-env.png)
+![](images/manage-env-01.png)
 
 At the next window that opens, click ‘Import’.
-![](images/import-env.png)
+![](images/import-env-01.png)
 
-And use this url to import the environment: https://raw.githubusercontent.com/Developer-Autodesk/view.and.data.api.postman/master/Autodesk%20View%20%26%20Data%20API%20Production%20Server.postman_environment
+And either choose the file ***Autodesk View & Data API Production Server.postman_environment*** from the repository or download it directly from [here](https://raw.githubusercontent.com/Developer-Autodesk/view.and.data.api.postman/master/Autodesk%20View%20%26%20Data%20API%20Production%20Server.postman_environment).
 
-Next, click the 'Back' button, and then select the 'Autodesk View & Data API Production Server' link.
-![](images/edit-env.png)
+Next, click on 'Autodesk View & Data API Production Server' link to enter the edit mode:
 
-Finally, enter your Autodesk View & Data API keys, and click 'Submit'.
-![](images/edit-key-env.png)
+![](images/edit-env-01.png)
+
+Finally, enter your Autodesk View & Data API keys, and click 'Update'.
+![](images/edit-key-env-01.png)
 
 
-### Collection
+## Collection 
 
 Postman uses collections, which can be used to add groups of API calls in order to automate the process of using/testing a REST API.
-This official Autodesk View & Data API Postman collection is to help get you to test and debug the API easily.
+This official ***Autodesk View & Data API Postman collection*** is to help get you to test and debug the API easily.
 
-To set up Postman with the Autodesk View & Data API collection, make sure that you are on the collection tab on the left, and click ‘Import collection'
-![](images/import-collection.png)
+To set up Postman with the ***Autodesk View & Data API collection***, make sure that you are on the collection tab on the left, and click ‘Import':
 
-Choose 'Download from link', and copy the URL below, then hit the 'Import' button.
+![](images/import-collection-01.png)
+
+Choose 'Import From Link', and copy the URL below, then hit the 'Import' button.
 https://www.getpostman.com/collections/fcf462a151b21e63a3fe
 
-You should get something like this:<br />
-![](images/collection-v1.png)
+You should get something like this:
+
+![](images/collection-v1-01.png)
 
 Note: This collection is setup to use 'Postman JetPacks' if you got a license, but you can use that collection without JetPacks too. To
 buy Jetpacks, simply click on the 'Tests' tab of any API call definition.
 
 
 ## Using Postman
+
+**Note**: Before continuing, don't forget to set your environment to the one imported above:
+
+![](images/env-set-01.png) 
 
 Using Postman with the Autodesk View & Data API is working like if you were making many manual HTTP requests, only easier. 
 Lets go through some example API calls so that you can get a feel for how it works with Postman.
@@ -114,7 +109,7 @@ Lets go through some example API calls so that you can get a feel for how it wor
 		<b>However, if you do not have 'JetPacks' installed</b>, you need to select the bearer string, right-click, and store it in the 'Bearer' variable 
 		like shown in (<b>4</b>).
 		
-		![](images/get-started.png)
+		![](images/get-started-01.png)
 		
 		All the API definitions work the same way whether they are POST, GET, PUT or HEAD. The rest of this chapter will only concentrate on 
 		telling you what value to save in which variable to chain calls. If you are using 'JetPacks', bail now, it is done automatically.
